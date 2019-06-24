@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#icono{
+    display: none;
+    color: #f00;
+}
+
+#mostrar{
+    display: none;
+    width: 400px;
+    background-color: #d4eefd;
+}
