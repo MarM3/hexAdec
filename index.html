@@ -1,50 +1,116 @@
-<!DOCTYPE html>
-<html lang="es">
+---
+layout: default
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Validar Hexadecimal</title>
-    <meta name="author" content="Mar Mazuelas">
-    <meta name="description" content="Ejercicio formulario de validación de un valor hexadecimal">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
-
-<body>
+<div class="header-container jumbotron">
     <div class="container">
-        <div class="row">
-            <h1>Pasar un valor hexadecimal a decimal</h1>
+        <h1>Proyecto de cálculo de Hexadecimal a Decimal</h1>
+        <p>Web relizada para calcular un número Hexadecimal a Decimal. ¡¡No te lo pierdas!!</p>
+        <p><a class="btn btn-primary btn-lg" href="{{ "/docs/home/" | prepend: site.baseurl }}" role="button">Leer más</a></p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="header-light regular-pad">Explicación</h2>
+              <p class="lead"></p>
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Titulo
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Web cálculo Hexadecimal a Decimal.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Descripción
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Aplicación para calcular el resultado decimal de un número hexadecimal introducido en el cuadro de texto.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Tecnología
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      La tecnología utilizada es HTML, CSS y JavaScript.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Autor
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    Mar Mazuelas
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Fecha
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    31 de Mayo del 2019
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <form action="#">
-            <div class="row">
-                <h3>Los campos con * son obligatorios.</h3>
-            </div>
-            <div class="row">
-                <label for="valor">Introduzca el valor hexadecimal*:
-                    <input type="text" id="valor" name="valor" title="Valor hexadecimal tipo: 0F0F0F"
-                        placeholder="Ej: 12d58f" required>
-                </label>
-            </div>
-            <div class="row">
-                <input type="submit" id="enviar" name="enviar" value="Enviar" class="btn btn-primary">
-            </div>
-        </form>
-        <i class="fab fa-buysellads" id="icono">Debe introducir un hexadecimal válido</i>
-        <div class="row" id="mostrar">
-            <label for="resultado">En decimal es:
-            <input type="text" id="resultado" name="resultado" title="Resultado decimal">
-        </label>
+        <div class="col-md-6 text-center">
+            <img src="img/jekyll-dark.png" alt="" class="img-responsive">
         </div>
     </div>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    <script src="js/validar.js"></script>
-</body>
-
-</html>
+    <hr>
+    <div class="row">
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Fácil de usar</h3>
+            <p>Escriba un número hexadecimal, en el cuadro de texto.</code>.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-cogs" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Fácil de Ejecutar</h3>
+            <p>Pulse el botón enviar y verá los mensajes que le llegan.</p>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Vea su respuesta</h3>
+            <p>Convierte su número en decimal, fácilmente con este programa.</p>
+        </div>
+    </div>
+</div>
