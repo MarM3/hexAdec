@@ -6,10 +6,10 @@ description: >
   introduce un hexadecimal y compueba su decimal.
 lang: es-ES
 
-baseurl: "https://marm3.github.io/hexadecimalAdecimal" # the subpath of your site, e.g. /blog/
-url: https://marm3.github.io/hexadecimalAdecimal/ # the base hostname & protocol for your site
-git_address: https://github.com/MarM3/hexadecimalAdecimal
-git_edit_address: https://github.com/MarM3/hexadecimalAdecimal
+baseurl: "https://marm3.github.io/hexAdec" # the subpath of your site, e.g. /blog/
+url: https://marm3.github.io/hexAdec/ # the base hostname & protocol for your site
+git_address: https://github.com/MarM3/hexAdec
+git_edit_address: https://github.com/MarM3/hexAdec
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
